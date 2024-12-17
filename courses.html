@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* header {
+  background-color: #4CAF50;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #d4edda;
+} */
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2E7D32;
+}
+.pricing {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.pricing p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.pricing-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card.popular {
+  background: #4CAF50;
+  color: white;
+}
+
+.pricing-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-card p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-card ul {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.pricing-card li {
+  margin: 0.5rem 0;
+}
+
+.pricing-card a {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background: #2E7D32;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.pricing-card a:hover {
+  background: #1B5E20;
+}
+.delivery {
+  padding: 4rem 2rem;
+  background-color: #e8f5e9;
+}
+
+.delivery p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.delivery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.delivery-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.delivery-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.delivery-card i {
+  font-size: 3rem;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+}
+
+.delivery-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.delivery-card p {
+  color: #555;
+}
+@media (max-width: 768px) {
+  .pricing-container,
+  .delivery-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+  </style>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Learn Front-End</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+<!-- Pricing Section -->
+<section class="pricing">
+  <h2>Our Pricing Plans</h2>
+  <p>Flexible plans tailored to meet your needs.</p>
+  <div class="pricing-container">
+    <div class="pricing-card">
+      <h3>1-on-1 Coaching</h3>
+      <p>₦50,000/8 Weeks</p>
+      <ul>
+        <li>HTML, CSS, JavaScript (React)</li>
+        <li>CMS Training</li>
+        <li>Real Projects</li>
+      </ul>
+      <a href="https://paystack.com/buy/1-on-1-personalized-coaching" class="btn">Make Payment</a>
+    </div>
+
+    <div class="pricing-card popular">
+      <h3>Group Workshops</h3>
+      <p>₦50,000/8 Weeks</p>
+      <ul>
+        <li>HTML, CSS, JavaScript (React)</li>
+        <li>CMS Training</li>
+        <li>Real Projects</li>
+      </ul>
+      <a href="https://paystack.com/buy/group-workshops-frontend-development" class="btn">Make Payment</a>
+    </div>
+
+    <!-- <div class="pricing-card">
+      <h3>One-Time Access</h3>
+      <p>$499</p>
+      <ul>
+        <li>Lifetime Access</li>
+        <li>All Modules</li>
+        <li>Project-Based Learning</li>
+        <li>Free Mentorship</li>
+      </ul>
+      <button>Get Started</button>
+    </div> -->
+  </div>
+</section>
+
+<!-- Delivery Section -->
+<section class="delivery">
+  <h2>How We Deliver Lessons</h2>
+  <p>Our comprehensive learning system includes:</p>
+  <div class="delivery-container">
+    <div class="delivery-card">
+      <i class="fas fa-video"></i>
+      <h3>Video Tutorials</h3>
+      <p>Learn at your own pace with step-by-step instructional videos.</p>
+    </div>
+
+    <div class="delivery-card">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Interactive Coding</h3>
+      <p>Practice coding directly with interactive exercises and challenges.</p>
+    </div>
+
+    <div class="delivery-card">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <h3>Live Sessions</h3>
+      <p>Engage in weekly live sessions to solve doubts and build projects.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h4>Contact Us</h4>
+        <p> Phone: +234 904 429 9867</p>
+        <p> Email: support@chloetechsolutions.com</p>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>© 2024 | Powered by <a href="https://chloetechsolutions.com" target="_blank">Chloetech Solutions</a> All Rights Reserved.</p>
+        <p></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

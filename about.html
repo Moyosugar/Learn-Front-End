@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  font-family: 'Poppins', sans-serif;
+  
+}
+    /* General Section Styling */
+.specialization , .curriculum{
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Section Titles */
+section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* Section Descriptions */
+section p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  /* color: #555; */
+}
+
+/* Specializations Section */
+.specialization ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.specialization li {
+  background: #e8f5e9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.specialization li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.specialization li::before {
+  content: "✔";
+  display: block;
+  font-size: 1.5rem;
+  color: #4CAF50;
+  margin-bottom: 0.5rem;
+}
+
+.specialization li {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Curriculum Section */
+.curriculum ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.curriculum li {
+  background: linear-gradient(to right, #4CAF50, #2E7D32);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.curriculum li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Learn Front-End</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="about-hero">
+    <div class="hero-content">
+      <h1>About Us</h1>
+      <p>Your journey to becoming a frontend developer starts here. We are dedicated to providing the highest quality training for beginners and aspiring developers.</p>
+    </div>
+  </section>
+
+  <section class="mission">
+    <div class="mission-content">
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to empower students and beginners with the skills and confidence needed to excel in frontend development. By combining practical lessons, mentorship, and career guidance, we aim to make tech education accessible to everyone.
+      </p>
+    </div>
+  </section>
+
+  <section class="vision">
+    <div class="vision-container">
+      <div class="vision-text">
+        <h2>Our Vision</h2>
+        <p>
+          We envision a world where anyone with the passion for technology can build a rewarding career in frontend development. By removing barriers to learning, we help shape the next generation of tech leaders.
+        </p>
+      </div>
+      <div class="vision-image">
+        <img src="hero-bg.jpeg" alt="Vision Illustration" />
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose-us">
+    <h2>Why Choose Us?</h2>
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Expert Instructors</h3>
+        <p>Learn from industry professionals with years of experience.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-code"></i>
+        <h3>Hands-On Learning</h3>
+        <p>Work on real-world projects to build your portfolio.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-headset"></i>
+        <h3>Ongoing Support</h3>
+        <p>Access free mentorship to keep improving after the course.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="specialization">
+    <h2>Specializations Offered</h2>
+    <p>We focus on HTML, CSS, JavaScript, and CMS platforms. You will learn:</p>
+    <ul>
+      <li>Web Page Layouts with HTML5</li>
+      <li>Designing Styles with CSS</li>
+      <li>Interactive Elements with JavaScript</li>
+      <li>Building Websites with CMS</li>
+    </ul>
+  </section>
+
+  <!--  -->
+  <section class="about-contact">
+    <div class="contact-container">
+      <h2>Get in Touch</h2>
+      <p>Have questions? We’d love to hear from you!</p>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+  </section>
+  
+  
+
+  
+  
+  <!-- <section class="curriculum">
+    <h2>Our Curriculum</h2>
+    <ul>
+      <li>Intro to HTML and CSS</li>
+      <li>JavaScript Fundamentals</li>
+      <li>Responsive Web Design</li>
+      <li>Project-based Learning</li>
+      <li>Advanced JavaScript Techniques (React)</li>
+    </ul>
+  </section> -->
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h4>Contact Us</h4>
+        <p> Phone: +234 904 429 9867</p>
+        <p> Email: support@chloetechsolutions.com</p>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>© 2024 | Powered by <a href="https://chloetechsolutions.com" target="_blank">Chloetech Solutions</a> All Rights Reserved.</p>
+        <p></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
