@@ -17,6 +17,27 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
   /* Global Font Setup */
 /* body {
     font-family: 'Roboto', sans-serif;
